@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<link type="text/css" rel="stylesheet" href="assets/css/style.css">
+	<link type="text/css" rel="stylesheet" href="assets/css/fonts.css">
+	<style>
+		/* CSS for the video background container */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden; /* Hide any video overflow outside the container */
+  filter: blur(5px); /* Adjust the blur intensity as needed */
+}
+
+/* CSS for the video iframe */
+.video-background iframe {
+  width: 100%;
+  height: 100%;
+}
+
+	  </style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+	<body>
+		<!--======================== LOADINGSCREEN =========================-->
+		<div class="loading_screen">
+			<div class="video-background">
+				<iframe
+				  src="https://www.youtube.com/embed/9AwzjerTNCI?autoplay=1&loop=1&controls=0&showinfo=0&modestbranding=1&fs=0&cc_load_policy=0&iv_load_policy=3&autohide=0&mute=0&autoplay=1"
+				  frameborder="0"
+				  allow="autoplay"
+				  allowfullscreen
+				></iframe>
+			  </div>							
+			<audio ref="audio" id="song" src="" preload loop id="audio"></audio>
+			<div class="left_wrap">
+				<div class="wrap_hdr">
+				
+				</div>
+				<div class="overflow_team">
+
+
+				</div>
+			</div>
+			<div class="middle_wrap">
+				<div class="row">
+					<span>Cloud</span>
+					<span>Development</span>
+				</div>
+				<div class="flex_links">
+					<div id="discord" class="wrap_links">
+						<div class="bx_link">
+							<img src="assets/images/discord.png" alt="">
+						</div>
+						<div class="link_min_bx">
+							<span>discord.gg/jK5GMpamFu</span>
+						</div>
+					</div>
+					<div id="teamspeak" class="wrap_links">
+						<div class="bx_link">
+							<img src="assets/images/teamspeak.png" alt="">
+						</div>
+						<div class="link_min_bx">
+							<span>discord.gg/jK5GMpamFu</span>
+						</div>
+					</div>
+					<div id="tebex" class="wrap_links">
+						<div class="bx_link">
+							<img src="assets/images/store.png" alt="">
+						</div>
+						<div class="link_min_bx">
+							<span>discord.gg/jK5GMpamFu</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bottom_wrap">
+				<span class="value_bar-text">0%</span>
+				<div class="novalue_bar">
+					<div class="value_bar">
+						<img src="assets/images/linevalue.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="top_wrap">
+				<span id="name">Jala, Buba - Padam</span>
+				<div class="r_wrap">
+					<div class="icn_wr">
+						<svg id="previous" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M12.4646 12.9145C12.6995 12.8146 12.8664 12.661 12.9433 12.4738C13.0189 12.2899 13.0189 3.70821 12.9433 3.52433C12.7818 3.1316 12.1925 2.88772 11.8016 3.05187C11.7274 3.08301 10.7387 3.78748 9.60455 4.61728L7.54239 6.12602L7.51702 4.85288C7.49357 3.67669 7.48373 3.56731 7.38741 3.41621C7.18865 3.10443 6.76483 2.93617 6.40266 3.0253C6.16594 3.08357 0.382979 7.31226 0.16295 7.58799C-0.0994504 7.91684 -0.0433262 8.27567 0.31965 8.58979C0.412716 8.67032 1.78647 9.68503 3.3724 10.8447C5.48992 12.3931 6.30204 12.9612 6.42976 12.9833C6.80273 13.0478 7.19535 12.8832 7.38741 12.5819C7.48373 12.4308 7.49357 12.3214 7.51702 11.1452L7.54239 9.87209L9.62292 11.3955C10.7672 12.2333 11.7563 12.9378 11.8209 12.9609C12.0036 13.0262 12.2425 13.009 12.4646 12.9145Z" fill="white" fill-opacity="0.25"/>
+						</svg>
+						<svg id="play" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M4.04216 2.07648C3.53625 2.29201 3.19089 2.69269 3.06468 3.21052C3.02168 3.38709 3.00023 4.97595 3.00005 8.00234C2.99964 13.0732 2.99325 12.987 3.40568 13.4569C3.81602 13.9242 4.44772 14.1178 4.94145 13.9274C5.32061 13.7812 12.3253 9.39251 12.5468 9.16245C12.8683 8.82833 13 8.48998 13 7.99785C13 7.50571 12.8683 7.16736 12.5468 6.83324C12.3392 6.61764 5.33859 2.22288 4.97113 2.07754C4.71083 1.9746 4.28257 1.97407 4.04216 2.07648Z" fill="white"/>
+						</svg>
+						<svg id="skip" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M1.53538 3.08547C1.30054 3.18536 1.13364 3.33903 1.05671 3.52623C0.981098 3.71011 0.981098 12.2918 1.05671 12.4757C1.21818 12.8684 1.80747 13.1123 2.19836 12.9481C2.2726 12.917 3.26131 12.2125 4.39545 11.3827L6.45761 9.87398L6.48298 11.1471C6.50643 12.3233 6.51627 12.4327 6.61259 12.5838C6.81135 12.8956 7.23517 13.0638 7.59734 12.9747C7.83406 12.9164 13.617 8.68774 13.8371 8.41201C14.0995 8.08316 14.0433 7.72433 13.6804 7.41021C13.5873 7.32968 12.2135 6.31497 10.6276 5.15529C8.51008 3.6069 7.69796 3.0388 7.57024 3.01673C7.19727 2.95224 6.80465 3.1168 6.61259 3.41811C6.51627 3.56921 6.50643 3.67859 6.48298 4.85478L6.45761 6.12791L4.37708 4.60449C3.23279 3.76665 2.24367 3.06218 2.17908 3.03908C1.99645 2.9738 1.75749 2.991 1.53538 3.08547Z" fill="white" fill-opacity="0.25"/>
+						</svg>																					
+					</div>
+					<input class="range-input" type="range" min="0" max="100" step="0.5" value="0">
+				</div>
+			</div>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="assets/js/config.js"></script>
+		<script src="assets/js/script.js"></script>  
+	</body>
+</html>

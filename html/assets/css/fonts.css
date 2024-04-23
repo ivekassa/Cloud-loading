@@ -1,0 +1,40 @@
+@font-face { 
+  font-family: 'Black';
+  src: url('../fonts/PPMonumet/PPMonumentExtended-Black.ttf');
+}
+
+@font-face { 
+  font-family: 'Bold';
+  src: url('../fonts/PPMonumet/PPMonumentExtended-Bold.ttf');
+}
+
+@font-face { 
+  font-family: 'Book';
+  src: url('../fonts/PPMonumet/PPMonumentExtended-Book.ttf');
+}
+
+@font-face { 
+  font-family: 'Heavy';
+  src: url('../fonts/PPMonumet/PPMonumentExtended-Heavy.ttf');
+}
+
+@font-face { 
+  font-family: 'Light';
+  src: url('../fonts/PPMonumet/PPMonumentExtended-Light.ttf');
+}
+
+@font-face { 
+  font-family: 'Medium';
+  src: url('../fonts/PPMonumet/PPMonumentExtended-Medium.ttf');
+}
+
+@font-face { 
+  font-family: 'Regular';
+  src: url('../fonts/PPMonumet/PPMonumentExtended-Regular.ttf');
+}
+
+@font-face { 
+  font-family: 'SemiBold';
+  src: url('../fonts/PPMonumet/PPMonumentExtended-Semibold.ttf');
+}
+
